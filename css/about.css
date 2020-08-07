@@ -172,96 +172,46 @@ p {
 	text-decoration: none;
 	color: black;
 }
-
-/* ======================Top Content======================= */
-.top-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	margin-bottom: 20px;
-	border-bottom: 1px dashed black;
-}
-
+/* ====================Main Content===================== */
 .imgContainer {
 	margin-bottom: 3%;
 }
-
-.top-content .text-container {
-	width: 48%;
+.textContainer {
 	padding: 0 1%;
 	padding-bottom: 20px;
-}
-/* ==================Middle Content========================= */
-.middle-content {
 	margin-bottom: 20px;
 	border-bottom: 1px dashed black;
 }
-
-.middle-content h2 {
-	padding: 0 2%;
-	margin-bottom: 0;
-}
-
-.middle-content .boxes {
+/* ======================Card Content================== */
+.cardContent {
+	padding: 0 1%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	/* align-content: center; */
 }
-
-.middle-content .boxes .box {
-	width: 12.5%;
-	height: 100px;
-	background: black;
-	margin: 20px 2.5%;
-	color: white;
+.cardContent .card {
+	width: 48%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed black;
 }
-
-.middle-content .boxes .box:nth-child(1) {
-	background: teal;
+.cardContent .card .btn {
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 2% 5%;
+	margin: 2% 0 1%;
+	width: 48%;
+	text-align: center;
+	text-decoration: none;
+	color: black;
 }
-.middle-content .boxes .box:nth-child(2) {
-	background: gold;
-}
-.middle-content .boxes .box:nth-child(3) {
-	background: cadetblue;
-}
-.middle-content .boxes .box:nth-child(4) {
-	background: coral;
-}
-.middle-content .boxes .box:nth-child(5) {
-	background: crimson;
-}
-.middle-content .boxes .box:nth-child(6) {
-	background: forestgreen;
-}
-.middle-content .boxes .box:nth-child(7) {
-	background: darkorchid;
-}
-.middle-content .boxes .box:nth-child(8) {
-	background: hotpink;
-}
-.middle-content .boxes .box:nth-child(9) {
-	background: indigo;
-}
-.middle-content .boxes .box:nth-child(10) {
-	background: dodgerblue;
-}
-/* ==================Bottom Content========================= */
-.bottom-content {
-	display: flex;
-	margin: 0 2% 20px;
-	justify-content: space-around;
-}
-
-.bottom-content .text-container {
-	padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-	padding-right: 0;
+/* ===================Bottom Text================== */
+.bottomText {
+	border: none;
 }
 /* ======================Footer======================== */
 footer {
